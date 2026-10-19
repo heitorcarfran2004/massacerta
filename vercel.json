@@ -1,0 +1,31 @@
+{
+  "cleanUrls": true,
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/acesso-pescador",
+      "destination": "https://clubedopescador.vercel.app/",
+      "permanent": false
+    },
+    {
+      "source": "/acesso-pescador.html",
+      "destination": "https://clubedopescador.vercel.app/",
+      "permanent": false
+    },
+    {
+      "source": "/acesso",
+      "destination": "https://clubedopescador.vercel.app/",
+      "permanent": false
+    }
+  ]
+}
